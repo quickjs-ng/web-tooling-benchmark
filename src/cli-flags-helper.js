@@ -5,7 +5,8 @@ const targetList = new Set([
   "babylon",
   "buble",
   "chai",
-  "coffeescript",
+  // XXX(bnoordhuis) seems to suffer from catastrophic backtracking
+  //"coffeescript",
   "espree",
   "esprima",
   "jshint",

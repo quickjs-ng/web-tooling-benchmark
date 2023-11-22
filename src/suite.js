@@ -12,7 +12,8 @@ const getTarget = require("./cli-flags-helper").getTarget;
 // https://github.com/v8/web-tooling-benchmark/issues/6 for details.
 const defaultOptions = {
   maxTime: 0,
-  minSamples: 20
+  //minSamples: 20
+  minSamples: 1 // XXX(bnoordhuis) qjs is not quite as fast as v8 yet :)
 };
 
 const suite = new Benchmark.Suite();
